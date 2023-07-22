@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.bg-c-yellow {
+  background-color: #fcc302;
+}
+.c-white {
+  color: #fff;
+}
+.bg-c-sky {
+  background-color: #00bec9;
+}
+.c-sky {
+  color: #00bec9;
+}
+.f-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.row {
+  justify-content: center;
+}
+.gen-btn-1 {
+  width: 180px;
+  height: 70px;
+  font-size: 21px;
+  color: #fff !important;
+  border-radius: 5px;
+  border: none;
+  transition: .5s;
+
+}
+.gen-btn-1:hover{
+  background-color: #aa8500;
+}
+.container {
+  max-width: 1440px !important;
+}
+ul {
+  list-style: none;
+}
+.icon{
+  display: none;
+  color: #fff;
+}
+.header {
+  background-color: #daac00;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.header ul {
+  display: inline-flex;
+}
+.header ul li a {
+  color: #fff;
+  padding: 0 20px;
+  font-size: 30px;
+}
+.close-btn{
+  position: absolute;
+  right: 21px;
+  top: 21px;
+}
+@media (max-width:872px) {
+  .icon, .icon.show{
+    display: block;
+  } 
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    background-color: #daac00;
+    padding-top: 50px!important;
+    width: 200px;
+    height: 100vh;
+  }
+  .navbar .menu-list.active{
+    left: 0;
+  }
+  .menu-list li{
+    padding:5px 7px;
+}
+}
+.veterinarian {
+  padding: 136px 90px;
+}
+.service {
+  background-color: transparent;
+  border: 3px solid #fff;
+  margin-left: 25px;
+}
+.v-info h1 {
+  font-size: 66.6px;
+}
+.v-info p {
+  font-size: 26px;
+  line-height: 1.2;
+  margin: 40px 0 55px;
+}
+.v-image {
+  text-align: right;
+}
+.a-l-info h1 {
+  font-size: 50px;
+}
+.a-l-info p {
+  font-size: 29px;
+  line-height: 1.2;
+}
+.animal-lover {
+  padding: 135px;
+}
+.animal-lover .row .col-lg-6:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.a-l-image {
+  text-align: right;
+  width: fit-content;
+  position: relative;
+  margin-top: auto;
+}
+
+.a-l-img-back {
+  position: absolute;
+  left: -38px;
+  bottom: -32px;
+  height: 206px;
+  width: 253px;
+  z-index: -1;
+}
+
+.care {
+  padding: 100px 0;
+}
+.care-head h1 {
+  font-size: 75px;
+}
+.care-head p {
+  font-size: 33px;
+  line-height: 1.2;
+  margin: 34px 0;
+}
+.care-body {
+  padding: 0 108px;
+}
+.care-image {
+  border: 10px solid #fff;
+}
+.care-info h3 {
+  font-size: 36px;
+}
+.care-info p {
+  font-size: 24px;
+  line-height: 1.2;
+}
+.care-item {
+  margin: 0 32px;
+  text-align: center;
+}
+.lover {
+  padding: 138px;
+}
+.lover .row .col-lg-6:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.lover-image {
+  text-align: right;
+  width: fit-content;
+  position: relative;
+  margin-top: auto;
+}
+.l-img-back {
+  position: absolute;
+  right: -38px;
+  bottom: -32px;
+  height: 206px;
+  width: 253px;
+  z-index: -1;
+}
+.lover .f-box {
+  align-items: flex-end;
+  text-align: right;
+}
+.lover button {
+  margin-left: auto;
+}
+.lover h1 {
+  font-size: 50px;
+}
+.lover p {
+  font-size: 29px;
+  line-height: 1.2;
+}
+.price {
+  padding: 110px 108px;
+}
+.price-head h1 {
+  font-size: 75px;
+}
+.price-head p {
+  font-size: 33px;
+  line-height: 1.2;
+}
+.price span {
+  text-decoration: line-through;
+}
+.gen-btn-2 {
+  width: 199px;
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 25px;
+}
+.price-item {
+  margin: 0 32px;
+}
+.p-info h4 {
+  font-size: 41px;
+  margin-top: 38px;
+  margin-bottom: 41px;
+}
+.price-image {
+  border: 9px solid #fff;
+}
+.team {
+  padding: 142px 105px;
+}
+.team-head h1 {
+  font-size: 75px;
+}
+.team-head p {
+  font-size: 33px;
+  line-height: 1.2;
+}
+.team-item {
+  padding: 0 20px;
+}
+.team-info h2 {
+  font-size: 29px;
+}
+.team-info p {
+  font-size: 25px;
+}
+.team-icon {
+  display: inline-flex;
+}
+.team-icon i {
+  font-size: 20px;
+  color: #fff;
+  background-color: #fcc302;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.statictic {
+  background-image: url("image/statistic-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 575px;
+  padding: 154px 35px;
+}
+.stat-image img {
+  width: auto;
+}
+.stat-content p {
+  font-size: 42px;
+}
+.stat-content h1 {
+  font-size: 38px;
+}
+.recent {
+  padding: 140px 120px;
+}
+.rec-content {
+  padding: 34px;
+}
+.recent-head h1 {
+  font-size: 75px;
+}
+.recent-head p {
+  font-size: 33px;
+  line-height: 1.2;
+  margin-top: 45px;
+  margin-bottom: 90px;
+}
+.rec-info h1 {
+  font-size: 25px;
+}
+.rec-info h6 {
+  font-size: 16px;
+}
+.rec-info p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 26px 0;
+}
+.rec-info h3 {
+  font-size: 21px;
+}
+.footer {
+  background-color: #343434;
+  padding: 160px 45px;
+}
+.f-form {
+  text-align: right;
+}
+.foot-content h1 {
+  font-size: 37px;
+}
+.foot-content ul li,
+.foot-content p {
+  font-size: 25px;
+}
+.f-form input {
+  width: 350px;
+  height: 93px;
+  border: none;
+  outline: none;
+  vertical-align: top;
+}
+.f-form button {
+  width: 148px;
+  height: 93px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  margin-left: -5px;
+}
+.foot-icon {
+  display: inline-flex;
+}
+.foot-icon i {
+  font-size: 20px;
+  color: #303030;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1140px){
+  .f-form button {
+    width: 75px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .veterinarian {
+    padding: 76px 10px;
+  }
+  .animal-lover {
+    padding: 135px 10px;
+  }
+  .care-body {
+    padding: 0px 10px;
+  }
+  .lover {
+    padding: 138px 10px;
+  }
+  .price {
+    padding: 110px 10px;
+  }
+  .team {
+    padding: 142px 10px;
+  }
+  .statictic {
+    padding: 40px 10px;
+  }
+  .recent {
+    padding: 27px 10px;
+  }
+  .footer {
+    padding: 67px 10px;
+    text-align: center;
+  }
+  .recent-head p {
+    margin-bottom: 20px;
+  }
+  .f-form {
+    text-align: center;
+  }
+  .foot-content{
+    margin-bottom: 40px;
+  }
+  .f-form input {
+    width: 353px;
+  }
+  .l-img-back,
+  .a-l-img-back {
+    display: none;
+  }
+  .animal-lover .row .col-lg-6:last-child,
+  .lover .row .col-lg-6:last-child {
+    display: block;
+  }
+  .a-l-image,
+  .lover-image {
+    width: 100%;
+  }
+  .lover .f-box {
+    text-align: center;
+  }
+  .lover button {
+    margin: auto;
+  }
+  .v-info h1 {
+    font-size: 50.6px;
+  }
+  
+}
+@media (max-width: 991px){
+  .f-box{
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+  }
+} 
+@media (max-width: 665px) {
+  .v-info h1,
+  .a-l-info h1,
+  .care-head h1,
+  .lover h1,
+  .price-head h1,
+  .p-info h4,
+  .team-head h1,
+  .recent-head h1 {
+    font-size: 35px;
+  }
+  .stat-content h1 {
+    font-size: 30px;
+  }
+  .v-info p,
+  .a-l-info p,
+  .care-head p,
+  .lover p,
+  .price-head p,
+  .team-head p,
+  .recent-head p {
+    font-size: 18px;
+  }
+  .stat-content p {
+    font-size: 30px;
+  }
+  .gen-btn-1 {
+    width: 149px;
+    height: 58px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .v-info h1,
+  .a-l-info h1,
+  .care-head h1,
+  .lover h1,
+  .price-head h1,
+  .p-info h4,
+  .team-head h1,
+  .recent-head h1,
+  .care-info h3,
+  .team-info h2,
+  .foot-content h1
+   {
+    font-size: 22px;
+  }
+  .v-info p,
+  .a-l-info p,
+  .care-head p,
+  .lover p,
+  .price-head p,
+  .team-head p,
+  .recent-head p,
+  .care-info p,
+  .team-info p,
+  .foot-content ul li, .foot-content p {
+    font-size: 15px;
+  }
+  .gen-btn-1 {
+    width: 130px;
+    height: 47px;
+    font-size: 15px;
+  }
+  .service {
+    margin-left: 0;
+  }
+  .v-btn {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .team-icon i{
+    font-size: 14px;
+    width: 25px;
+    height: 25px;
+  }
+  .stat-content p {
+    font-size: 20px;
+}
+.stat-content h1 ,
+.rec-info h1{
+  font-size: 19px;
+}
+.rec-content{
+  padding: 5px;
+}
+.f-form input{
+  height: 60px;
+  width: 90%;
+}
+.f-form button{
+  height: 60px;
+  width: 50%;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.foot-icon i{
+  width: 25px;
+  height: 25px;
+  font-size: 15px;
+  padding: 2px;
+}
+}
